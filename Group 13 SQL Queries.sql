@@ -1,9 +1,6 @@
--- Group 13
--- Members Anirudha Chowdhury, Pradeep Singh, Revathi Mahadevan, Yuvraj Singh Harsh
-
 -- SQL Queries
 
--- PART 1,2,3,4,5 and 6 done by Anirudha Chowdhury
+
 1. create database [LMT_University]
 
 2.USE [LMT_University]
@@ -61,8 +58,7 @@ InsertedOn datetime NOT NULL
 -- we have used the the edit top 200 rows feature of SQL to Enter the data into the tables
 
 
---Part 9 
---Questions A to M of Part  9 haven been done by Pradeep Singh
+
 9a. select * from [enrol].[Student]
 
 9b. select * from [enrol].[Department]
@@ -119,7 +115,6 @@ where DATEDIFF(year, [StudentDOB], getdate()) = '21' OR DATEDIFF(year, [StudentD
 [LecturerAge]
 from [enrol].[Lecturer]
 
---Question N to S have been Done by Anirudha Chowdhury
 9n. select 
 [LecturerID],
 [LecturerName],
@@ -144,7 +139,7 @@ LEFT([LecturerName],5) as NameFirst5,
 [LecturerHighestQualification]
 from [enrol].[Lecturer] ;
 
--- Questions T to Y have Been done by Yuvraj Singh Harsh
+
 9t. select 
 [LecturerId],
 [LecturerName],
@@ -187,7 +182,7 @@ from [enrol].[Address]
 from [enrol].[Address]
 where [Country] = 'Poland'
 
--- Question Z to AA have been done by Revathi Mahadevan
+
 9z. select * from [enrol].[Address] where [State] IS NULL
 
 9aa. select * from [enrol].[Address] where [PostalCode] IS NOT NULL
@@ -322,7 +317,7 @@ ON [enrol].[Student].[AddressID] = [enrol].[Address].[AddressID]
 GROUP BY ([enrol].[Address].[Country])
 
 -- Part 12
--- All Question in Part 12 has Been done by Yuvraj Singh Harsh
+
 
 12a. select * INTO StudCopy 
 FROM [enrol].[Student];
@@ -414,8 +409,7 @@ JOIN
 ON [enrol].[Student].[AddressID] = [enrol].[Address].[AddressID]
 WHERE [State] = 'Bretagne'
 
--- Part 14
--- All Question in Part 14 Haven been done By Yuvraj Singh Harsh
+
 14a. UPDATE [enrol].[Student]
 SET [StudentMobile] = '845987653'
 FROM 
